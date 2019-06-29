@@ -155,7 +155,7 @@ namespace TapServer
                     break;
                 RegistryKey regAdapter = regAdapters.OpenSubKey(x, false);
                 object id = regAdapter.GetValue("ComponentId");
-                if (id != null && id.ToString() == "tapstrong") devGuid = regAdapter.GetValue("NetCfgInstanceId").ToString();
+                if (id != null && id.ToString() == "tap0901") devGuid = regAdapter.GetValue("NetCfgInstanceId").ToString();
             }
             return devGuid;
         }
